@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Log in";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<section id="loginForm">
+    <h3>Sign in using one of these providers:</h3>
+    <ul class="providers"></ul>
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/loginpage")
+    @Scripts.Render("~/bundles/jqueryval")
+}
