@@ -21,28 +21,22 @@
     </section>
 }
 
-<h3>We suggest the following:</h3>
+<h3>How to use:</h3>
 <ol class="round">
     <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
+        <h5>Set up Azure ACS</h5>
+        You need to set up an Access Control Namespace on Windows Azure.
+        <a href="http://www.windowsazure.com/en-us/develop/net/how-to-guides/access-control/#create-namespace">Learn more…</a>
     </li>
 
     <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
+        <h5>Configure Azure ACS Indentity Providers</h5>
+        The Access Control Service currently supports authentication using Google, Yahoo, Facebook, Microsoft Account, <a href="http://www.cloudidentity.com/blog/2012/11/07/provisioning-a-directory-tenant-as-an-identity-provider-in-an-acs-namespace/">Windows Azure Active Directory</a>, <a href="http://blogs.msdn.com/b/mcsuksoldev/archive/2012/11/02/azure-access-control-services-creating-a-custom-identity-provider.aspx">custom Identity Providers</a> and ADFS 2.0.
+        <a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg185971.aspx">Learn more…</a>
     </li>
 
     <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
+        <h5>Add ACS configuration</h5>
+        Edit the <code>App_Start\SecurityConfig.cs</code> file and change the authentication configuration to suit your project.
     </li>
 </ol>

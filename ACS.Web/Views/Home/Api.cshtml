@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ACS.Core.Models.Claims.SerializableClaim>
+
+@{
+    ViewBag.Title = "Data";
+    ViewBag.Message = "Getting data from the API.";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<h3>The API has validated the following claims:</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.Type</td>
+                <td>@claim.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>

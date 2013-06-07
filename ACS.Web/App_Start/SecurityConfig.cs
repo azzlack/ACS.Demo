@@ -26,6 +26,7 @@
                 signingKey: "vZhjuby4hTmoaKnptAXe1MPAMiI+63obW20+fVaFAYM=",
                 scheme: "ACS");
 
+            // Use custom acs controller factory
             ControllerBuilder.Current.SetControllerFactory(
                 new AcsControllerFactory(
                     new CookieToAuthenticationHeaderHandler("ACS"),
